@@ -1,0 +1,9 @@
+/**
+ * skylark-utils-json - The skylarkjs json utility Library.
+ * @author Hudaokeji Co.,Ltd
+ * @version v0.9.0
+ * @link www.skylarkjs.org
+ * @license MIT
+ */
+define(["./json"],function(t){"use strict";function e(t){return t<10?"0"+t:t}function n(){return this.valueOf()}return"function"!=typeof Date.prototype.toJSON&&(Date.prototype.toJSON=function(){return isFinite(this.valueOf())?this.getUTCFullYear()+"-"+e(this.getUTCMonth()+1)+"-"+e(this.getUTCDate())+"T"+e(this.getUTCHours())+":"+e(this.getUTCMinutes())+":"+e(this.getUTCSeconds())+"Z":null},Boolean.prototype.toJSON=n,Number.prototype.toJSON=n,String.prototype.toJSON=n),meta={"\b":"\\b","\t":"\\t","\n":"\\n","\f":"\\f","\r":"\\r",'"':'\\"',"\\":"\\\\"},t.stringify=function(t,e,n){var o;if(gap="",indent="","number"==typeof n)for(o=0;o<n;o+=1)indent+=" ";else"string"==typeof n&&(indent=n);if(rep=e,e&&"function"!=typeof e&&("object"!=typeof e||"number"!=typeof e.length))throw new Error("json.stringify");return function t(e,n){var o,r,i,p,u,f=gap,a=n[e];switch(a&&"object"==typeof a&&"function"==typeof a.toJSON&&(a=a.toJSON(e)),"function"==typeof rep&&(a=rep.call(n,e,a)),typeof a){case"string":return quote(a);case"number":return isFinite(a)?String(a):"null";case"boolean":case"null":return String(a);case"object":if(!a)return"null";if(gap+=indent,u=[],"[object Array]"===Object.prototype.toString.apply(a)){for(p=a.length,o=0;o<p;o+=1)u[o]=t(o,a)||"null";return i=0===u.length?"[]":gap?"[\n"+gap+u.join(",\n"+gap)+"\n"+f+"]":"["+u.join(",")+"]",gap=f,i}if(rep&&"object"==typeof rep)for(p=rep.length,o=0;o<p;o+=1)"string"==typeof rep[o]&&(i=t(r=rep[o],a))&&u.push(quote(r)+(gap?": ":":")+i);else for(r in a)Object.prototype.hasOwnProperty.call(a,r)&&(i=t(r,a))&&u.push(quote(r)+(gap?": ":":")+i);return i=0===u.length?"{}":gap?"{\n"+gap+u.join(",\n"+gap)+"\n"+f+"}":"{"+u.join(",")+"}",gap=f,i}}("",{"":t})}});
+//# sourceMappingURL=sourcemaps/stringify.js.map
