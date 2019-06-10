@@ -1,5 +1,5 @@
 /**
- * skylark-utils-json - The skylarkjs json utility Library.
+ * skylark-data-json - The skylarkjs json utility Library.
  * @author Hudaokeji Co.,Ltd
  * @version v0.9.0
  * @link www.skylarkjs.org

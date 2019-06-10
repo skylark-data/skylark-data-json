@@ -1,2 +1,2 @@
-# skylark-utils-json
-The skylarkjs json utility library
+# skylark-data-json
+The skylarkjs json data type library
