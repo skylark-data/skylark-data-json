@@ -89,7 +89,7 @@
 define('skylark-data-json/json',[
 	"skylark-langx/skylark"
 ], function(skylark) {
-    return skylark.json = {};
+    return skylark.attach("data.json", {});
 });
 
 define('skylark-data-json/main',[

@@ -1,5 +1,5 @@
 define([
 	"skylark-langx/skylark"
 ], function(skylark) {
-    return skylark.json = {};
+    return skylark.attach("data.json", {});
 });

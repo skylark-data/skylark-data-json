@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["skylark-langx/skylark"],function(n){return n.json={}});
+define(["skylark-langx/skylark"],function(a){return a.attach("data.json",{})});
 //# sourceMappingURL=sourcemaps/json.js.map
