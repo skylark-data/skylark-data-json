@@ -1,5 +1,5 @@
 /**
- * skylark-data-json - The skylarkjs json utility Library.
+ * skylark-texts-json - The skylarkjs json utility Library.
  * @author Hudaokeji Co.,Ltd
  * @version v0.9.0
  * @link www.skylarkjs.org
@@ -75,7 +75,7 @@
   factory(define,require);
 
   if (!isAmd) {
-    var skylarkjs = require("skylark-langx/skylark");
+    var skylarkjs = require("skylark-langx-ns");
 
     if (isCmd) {
       module.exports = skylarkjs;
@@ -86,21 +86,21 @@
 
 })(function(define,require) {
 
-define('skylark-data-json/json',[
+define('skylark-texts-json/json',[
 	"skylark-langx/skylark"
 ], function(skylark) {
     return skylark.attach("data.json", {});
 });
 
-define('skylark-data-json/main',[
+define('skylark-texts-json/main',[
     "./json",
 
 ], function(json) {
     return json;
 });
 
-define('skylark-data-json', ['skylark-data-json/main'], function (main) { return main; });
+define('skylark-texts-json', ['skylark-texts-json/main'], function (main) { return main; });
 
 
 },this);
-//# sourceMappingURL=sourcemaps/skylark-data-json.js.map
+//# sourceMappingURL=sourcemaps/skylark-texts-json.js.map

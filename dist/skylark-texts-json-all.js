@@ -1,0 +1,9 @@
+/**
+ * skylark-texts-json - The skylarkjs json utility Library.
+ * @author Hudaokeji Co.,Ltd
+ * @version v0.9.0
+ * @link www.skylarkjs.org
+ * @license MIT
+ */
+!function(n,r){var t=r.define,require=r.require,e="function"==typeof t&&t.amd,s=!e&&"undefined"!=typeof exports;if(!e&&!t){var o={};t=r.define=function(n,r,t){"function"==typeof t?(o[n]={factory:t,deps:r.map(function(r){return function(n,r){if("."!==n[0])return n;var t=r.split("/"),e=n.split("/");t.pop();for(var s=0;s<e.length;s++)"."!=e[s]&&(".."==e[s]?t.pop():t.push(e[s]));return t.join("/")}(r,n)}),resolved:!1,exports:null},require(n)):o[n]={factory:null,resolved:!0,exports:t}},require=r.require=function(n){if(!o.hasOwnProperty(n))throw new Error("Module "+n+" has not been defined");var module=o[n];if(!module.resolved){var t=[];module.deps.forEach(function(n){t.push(require(n))}),module.exports=module.factory.apply(r,t)||null,module.resolved=!0}return module.exports}}if(!t)throw new Error("The module utility (ex: requirejs or skylark-utils) is not loaded!");if(function(n,require){n("skylark-langx-ns/_attach",[],function(){return function(n,r,t){"string"==typeof r&&(r=r.split("."));for(var e=r.length,s=n,o=0,a=r[o++];o<e;)s=s[a]=s[a]||{},a=r[o++];return s[a]=t}}),n("skylark-langx-ns/ns",["./_attach"],function(n){var r={attach:function(t,e){return n(r,t,e)}};return r}),n("skylark-langx-ns/main",["./ns"],function(n){return n}),n("skylark-langx-ns",["skylark-langx-ns/main"],function(n){return n}),n("skylark-langx/skylark",["skylark-langx-ns"],function(n){return n}),n("skylark-texts-json/json",["skylark-langx/skylark"],function(n){return n.attach("data.json",{})}),n("skylark-texts-json/main",["./json"],function(n){return n}),n("skylark-texts-json",["skylark-texts-json/main"],function(n){return n})}(t),!e){var a=require("skylark-langx-ns");s?module.exports=a:r.skylarkjs=a}}(0,this);
+//# sourceMappingURL=sourcemaps/skylark-texts-json-all.js.map

@@ -1,5 +1,5 @@
 {
-  "name": "skylark-data-json",
+  "name": "skylark-texts-json",
   "version": "0.9.0",
   "description": "The skylarkjs json utility Library.",
   "main": "-",
@@ -10,7 +10,7 @@
   "homepage": "www.skylarkjs.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skylarkjs/skylark-data-json.git"
+    "url": "git+https://github.com/skylark-texts/skylark-texts-json.git"
   },
   "keywords": [
     "skylark",
